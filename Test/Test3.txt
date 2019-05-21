@@ -1,0 +1,16 @@
+#Test Incorrect parametre manquant
+%IN
+L=2
+E=1
+N=500
+%PL
+P(L)
+%EL
+V(L)
+%PE
+P(E)
+P(L)
+%EE
+V(L)
+V(E)
+%FI

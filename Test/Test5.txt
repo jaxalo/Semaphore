@@ -1,0 +1,15 @@
+#Test Incorrect %FI et %IN manquant
+%PA
+L=10
+E=10
+N=500
+%PL
+P(L)
+%EL
+V(L)
+%PE
+P(E)
+P(L)
+%EE
+V(L)
+V(E)
