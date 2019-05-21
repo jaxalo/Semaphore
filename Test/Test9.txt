@@ -1,0 +1,27 @@
+#Test Correct avec des commentaires un peu partout et des lignes vides
+%IN
+L=2
+E=1
+
+%PA
+L=10
+E=10
+#Test Correct avec des commentaires un peu partout et des lignes vides
+N=500
+
+%PL
+
+P(L)
+%EL
+
+V(L)
+%PE
+#Test Correct avec des commentaires un peu partout et des lignes vides
+P(E)
+P(L)
+#Test Correct avec des commentaires un peu partout et des lignes vides
+%EE
+V(L)
+
+V(E)
+%FI

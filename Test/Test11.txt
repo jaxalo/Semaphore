@@ -1,0 +1,19 @@
+#Test Incorrect car il n y a pas de terme à droite du egale
+%IN
+L=
+E=1
+%PA
+L=10
+E=10
+N=500
+%PL
+P(L)
+%EL
+V(L)
+%PE
+P(E)
+P(L)
+%EE
+V(L)
+V(E)
+%FI

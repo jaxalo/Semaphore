@@ -1,0 +1,19 @@
+#Test Incorrect car le terme a gauche n'est pas une lettre majuscule
+%IN
+a=2
+E=1
+%PA
+L=10
+E=10
+N=500
+%PL
+P(L)
+%EL
+V(L)
+%PE
+P(E)
+P(L)
+%EE
+V(L)
+V(E)
+%FI
