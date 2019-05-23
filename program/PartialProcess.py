@@ -6,7 +6,6 @@ class PartialProcess:
     def __init__(self):
         self.partial_prog = dict()
         self.keywords = ['%IN', '%PA', '%PL', '%EL', '%PE', '%EE', 'EX', 'PX', '%FI']
-        self.keyparams = ['L', 'E', 'X', 'N']
 
     def build(self, file):
         lines = file.readlines()
@@ -39,8 +38,6 @@ class PartialProcess:
     def get_keywords(self):
         return self.keywords
 
-    def get_params(self):
-        return self.keyparams
 
     def get_mandatory_keywords(self):
         return ['%IN', '%PA', '%FI']

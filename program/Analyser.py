@@ -12,14 +12,13 @@ class Analyser:
     def analyse_syntax(self, process):
         print('start analysing syntax')
         self.check_all_keywords_present(process)
-        self.check_init_format(process)
-        self.check_param_format(process)
+        if not self.syntax_errors:
+            self.check_init_format(process)
+            self.check_param_format(process)
         print('done analysing syntax')
-
 
     def analyse_semantic(self, process):
         print('start analysing semantic')
-        self.check_all_keywords_present(process)
         print('done analysing semantic')
 
     def check_all_keywords_present(self, process):
@@ -39,21 +38,11 @@ class Analyser:
 
     def check_param_format(self, process):
         param_clauses = process.get_partial_prog()['%PA']
-        seens = list()
         if param_clauses:
             for param_clause in param_clauses:
-                if not re.search(r'[A-Z]=[0-9]+', param_clause):
+                if not re.search(r'[L|E|N|X]=[0-9]+', param_clause):
                     self.check_syntax = False
                     self.syntax_errors.append('{} not in the right %PA format'.format(param_clause))
-                else:
-                    seens.append(param_clause[0])
-            print(seens)
-            for seen in seens:
-                if seen not in process.get_params():
-                    self.check_syntax = False
-                    self.syntax_errors.append('{} not in the right %PA format'.format(seen))
-                else:
-                    return
 
     def is_correct(self):
         return self.check_syntax and self.check_semantic

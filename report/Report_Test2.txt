@@ -1,2 +1,3 @@
 No
-'%IN'
+%IN is not present
+
