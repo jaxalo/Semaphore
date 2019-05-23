@@ -1,0 +1,20 @@
+#Test Faux Parametre dans %PA
+%IN
+L=2
+E=1
+%PA
+L=10
+E=10
+N=500
+J=2
+%PL
+P(L)
+%EL
+V(L)
+%PE
+P(E)
+P(L)
+%EE
+V(L)
+V(E)
+%FI
