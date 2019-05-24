@@ -2,9 +2,12 @@
 # coding: utf8
 
 import os
+from program.PartialProcess import PartialProcess
+from program.Analyser import Analyser
 
 
 class Reader:
+    SEPARATOR = '\n------------------------------\n'
 
     @staticmethod
     def process_folder(folder_name):
@@ -23,14 +26,19 @@ class Reader:
     def process_file(folder_name, file_name):
         try:
             file_path = '../' + folder_name + '/' + file_name
+            process = PartialProcess()
+            analyser = Analyser()
             with open(file_path) as fp:
-                line = fp.readline()
-                cnt = 1
-                while line:
-                    print("Line {}: {}".format(cnt, line.strip()))
-                    line = fp.readline()
-                    cnt += 1
-            return True, None, file_name
+                print(Reader.SEPARATOR, file_name)
+                process.build(fp)
+                analyser.analyse_syntax(process)
+                analyser.analyse_semantic(process)
+                if analyser.is_correct():
+                    res = process.serialize()
+                else:
+                    res = analyser.get_errors()
+                print('done_processing ', file_name, Reader.SEPARATOR)
+                return analyser.is_correct(), res, file_name
         except Exception as e:
-            print(e)
+            print('done_processing ', file_name, Reader.SEPARATOR)
             return False, e, file_name

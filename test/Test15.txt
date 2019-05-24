@@ -1,7 +1,4 @@
-#Test Correct deux champs IN
-%IN
-L=2
-E=1
+#Test Incorrect mot cle inexistant
 %IN
 L=2
 E=1
@@ -17,6 +14,9 @@ V(L)
 P(E)
 P(L)
 %EE
+V(L)
+V(E)
+%LOL
 V(L)
 V(E)
 %FI

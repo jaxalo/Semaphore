@@ -1,7 +1,4 @@
-#Test Correct deux champs IN
-%IN
-L=2
-E=1
+#Test Faux Parametre dans %PA
 %IN
 L=2
 E=1
@@ -9,6 +6,7 @@ E=1
 L=10
 E=10
 N=500
+J=2
 %PL
 P(L)
 %EL
