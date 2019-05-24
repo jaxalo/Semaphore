@@ -1,4 +1,4 @@
-#Test Incorrect deux champs IN
+#Test Correct deux champs IN
 %IN
 L=2
 E=1

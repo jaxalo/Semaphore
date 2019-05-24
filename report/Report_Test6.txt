@@ -1,4 +1,4 @@
-Yes
+Success
 {
     "%IN": [
         "L=2",
