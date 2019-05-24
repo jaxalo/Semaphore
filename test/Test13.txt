@@ -1,6 +1,6 @@
 #Test Incorrect car semaphore non declare
 %IN
-a=2
+L=2
 E=1
 %PA
 L=10
@@ -12,7 +12,7 @@ P(L)
 V(L)
 %PE
 #Celui ci
-P(O) 
+P(a)
 P(L)
 %EE
 V(L)

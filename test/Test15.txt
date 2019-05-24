@@ -17,4 +17,6 @@ P(L)
 V(L)
 V(E)
 %LOL
+V(L)
+V(E)
 %FI

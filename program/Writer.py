@@ -27,7 +27,7 @@ class Writer:
 
         file_create = 'Report_' + file_name
         with open(os.path.join(path, file_create), 'w+') as temp_file:
-            temp_file.write('Yes' if success else 'No')
+            temp_file.write('Success' if success else 'Fail')
             temp_file.write('\n')
             if success:
                 temp_file.write(program_file)
