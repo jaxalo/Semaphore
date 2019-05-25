@@ -15,8 +15,8 @@ class Release(Instruction):
 
     def execute(self):
         # return done and blocked and blocking semaphore
+        self.semaphore.increment()
         if not self.waiting_process:
-            self.semaphore.increment()
             self.next_process = None
         else:
             self.next_process = random.choice(self.waiting_process)
@@ -24,3 +24,6 @@ class Release(Instruction):
 
     def get_next_process(self):
         return self.next_process
+
+    def __str__(self):
+        return ' Release ' + self.semaphore.__str__()

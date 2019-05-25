@@ -42,3 +42,22 @@ class Reader:
         except Exception as e:
             print('done_processing ', file_name, Reader.SEPARATOR)
             return False, e, file_name
+
+    @staticmethod
+    def process_file1(folder_name, file_name):
+        try:
+            file_path = '../' + folder_name + '/' + file_name
+            process = PartialProcess()
+            analyser = Analyser()
+            with open(file_path) as fp:
+                print(Reader.SEPARATOR, file_name)
+                process.build(fp)
+                analyser.analyse_syntax(process)
+                analyser.analyse_semantic(process)
+                #build process
+                print('done_processing ', file_name, Reader.SEPARATOR)
+                return analyser.is_correct(), res, file_name
+        except Exception as e:
+            print('done_processing ', file_name, Reader.SEPARATOR)
+            return False, e, file_name
+

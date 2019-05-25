@@ -14,3 +14,6 @@ class Take(Instruction):
             return True, False, None
         elif self.semaphore.get_value() == 0:
             return False, True, self.semaphore
+
+    def __str__(self):
+        return 'Take ' + self.semaphore.__str__()

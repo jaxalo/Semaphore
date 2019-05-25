@@ -15,3 +15,6 @@ class Semaphore:
 
     def get_id(self):
         return self.identifier
+
+    def __str__(self):
+        return str(self.identifier) + ' ' + str(self.value)
