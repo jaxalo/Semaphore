@@ -72,7 +72,7 @@ class Analyser:
                         return
 
     def check_undeclared_semaphore(self, process):
-        semaphores = []
+        semaphores = list()
         # get declared semaphores
         for assignment in process.get_partial_prog()['%IN']:
             semaphores.append(assignment[0])

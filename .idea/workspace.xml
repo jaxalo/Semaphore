@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cbf543-08f7-407d-b317-0384fbe8561a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/program/Process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/program/Scheduler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/program_test/ProcessTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch/Test2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/Analyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Analyser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/PartialProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/PartialProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/Writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_Test9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_Test9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Instruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Instruction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Release.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Release.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Semaphore.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Semaphore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/SemaphoreTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/program_test/SemaphoreTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Take.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Take.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/Waiter.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Waiter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +24,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/program/Writer.py">
+        <entry file="file://$PROJECT_DIR$/program/Scheduler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="-1212">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#39#63#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program/Instruction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Test1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program_test/ProcessTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program/Take.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program/Process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1494">
+              <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program/Semaphore.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -75,7 +125,6 @@
         <option value="$PROJECT_DIR$/log/log.py" />
         <option value="$PROJECT_DIR$/report/Report_Test1.txt" />
         <option value="$PROJECT_DIR$/report/Report_Test2.txt" />
-        <option value="$PROJECT_DIR$/program/Reader.py" />
         <option value="$PROJECT_DIR$/test/Test4.txt" />
         <option value="$PROJECT_DIR$/test/Test16.txt" />
         <option value="$PROJECT_DIR$/program/PartialProcess.py" />
@@ -83,17 +132,29 @@
         <option value="$PROJECT_DIR$/test/Test13.txt" />
         <option value="$PROJECT_DIR$/test/Test14.txt" />
         <option value="$PROJECT_DIR$/test/Test15.txt" />
-        <option value="$PROJECT_DIR$/program/Analyser.py" />
         <option value="$PROJECT_DIR$/program/main.py" />
         <option value="$PROJECT_DIR$/program/Writer.py" />
+        <option value="$PROJECT_DIR$/program/Analyser.py" />
+        <option value="$PROJECT_DIR$/program/SemaphoreTest.py" />
+        <option value="$PROJECT_DIR$/program/Semaphore.py" />
+        <option value="$PROJECT_DIR$/program/Reader.py" />
+        <option value="$PROJECT_DIR$/program/Instruction.py" />
+        <option value="$PROJECT_DIR$/program/Take.py" />
+        <option value="$PROJECT_DIR$/program/Waiter.py" />
+        <option value="$PROJECT_DIR$/program/ProcessTest.py" />
+        <option value="$PROJECT_DIR$/program/Release.py" />
+        <option value="$PROJECT_DIR$/program_test/ProcessTest.py" />
+        <option value="$PROJECT_DIR$/program/Process.py" />
+        <option value="$PROJECT_DIR$/test/Test1.txt" />
+        <option value="$PROJECT_DIR$/program/Scheduler.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="298" />
-    <option name="y" value="164" />
-    <option name="width" value="1391" />
-    <option name="height" value="786" />
+    <option name="x" value="67" />
+    <option name="y" value="34" />
+    <option name="width" value="927" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -101,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,11 +170,20 @@
               <item name="Semaphore" type="b2602c69:ProjectViewProjectNode" />
               <item name="Semaphore" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Semaphore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Semaphore" type="462c0819:PsiDirectoryNode" />
+              <item name="program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Semaphore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Semaphore" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,6 +192,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/program_test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/launch" />
       <recent name="$PROJECT_DIR$/test" />
@@ -139,7 +213,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ProcessTest">
+    <configuration name="ProcessTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Semaphore" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/program" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program_test/ProcessTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SemaphoreTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Semaphore" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/program" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program_test/SemaphoreTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Semaphore" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,6 +288,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ProcessTest" />
+        <item itemvalue="Python.SemaphoreTest" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -191,6 +309,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="34" width="1853" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -233,59 +352,12 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Program/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Program/Reader.py" />
-    <entry file="file://$PROJECT_DIR$/Program/main.py" />
-    <entry file="file://$PROJECT_DIR$/program/reader.py" />
-    <entry file="file://$PROJECT_DIR$/log/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#39#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/shutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="470" selection-start-line="470" selection-end-line="470" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/Test1.txt" />
-    <entry file="file://$PROJECT_DIR$/launch/Test4.txt" />
-    <entry file="file://$PROJECT_DIR$/program/Reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-          <folding>
-            <element signature="e#39#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/launch/Test16.txt" />
     <entry file="file://$PROJECT_DIR$/test/Test11.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Test12.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program/PartialProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Test13.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -294,20 +366,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/Test2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/Test2.txt" />
     <entry file="file://$PROJECT_DIR$/test/Test2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -363,26 +422,7 @@
     <entry file="file://$PROJECT_DIR$/test/Test10.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/Test10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program/Analyser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#39#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/Test10.txt" />
     <entry file="file://$PROJECT_DIR$/report/Report_Test4.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -448,12 +488,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/program/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#39#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_test/SemaphoreTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/program/Writer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="18">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="e#39#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1247971763/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="811" column="8" selection-start-line="811" selection-start-column="8" selection-end-line="811" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Analyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1356">
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Waiter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Release.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/PartialProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program_test/ProcessTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Semaphore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Instruction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Take.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/Scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1212">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
