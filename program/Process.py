@@ -39,43 +39,43 @@ class Process:
             if prolog_clause[0] == 'P':
                 instruction = Take(self.semaphores[prolog_clause[2]], waiting_process, self)
             elif prolog_clause[0] == 'V':
-                instruction = Release(waiting_process, self.semaphores[prolog_clause[2]], waiting_process, self)
+                instruction = Release(self.semaphores[prolog_clause[2]], waiting_process, self)
             instruction_list.append(instruction)
 
         # building critical_section
-        self.critical_section = Waiter()
+        self.critical_section = Waiter(self)
         instruction_list.append(self.critical_section)
 
         # building epilog
         for epilog_clause in epilog:
             instruction = None
             if epilog_clause[0] == 'P':
-                instruction = Take(self.semaphores[epilog_clause[2]])
+                instruction = Take(self.semaphores[epilog_clause[2]], waiting_process, self)
             elif epilog_clause[0] == 'V':
-                instruction = Release(waiting_process, self.semaphores[epilog_clause[2]])
+                instruction = Release(self.semaphores[epilog_clause[2]], waiting_process, self)
             instruction_list.append(instruction)
 
         return instruction_list
 
     def execute(self):
-        done, blocked, blocking_semaphore = self.instruction_list[self.actual_instruction].execute()
+        blocked = self.instruction_list[self.actual_instruction].execute()
+        self.blocked = blocked
 
-        if done:
+        if blocked and type(self.instruction_list[self.actual_instruction]) is Waiter:
+            self.actual_instruction += 0
+            self.blocked = False
+        elif not blocked:
             self.actual_instruction += 1
-            self.blocked = blocked
-        else:
-            self.blocked = blocked
 
-        return done, blocked, blocking_semaphore
 
     def is_blocked(self):
         return self.blocked
 
     def block_process(self):
-        self.blocked = False
+        self.blocked = True
 
     def unblock_process(self):
-        self.blocked = True
+        self.blocked = False
 
     def is_in_critical_section(self):
         return type(self.instruction_list[self.actual_instruction]) is Waiter
@@ -86,8 +86,11 @@ class Process:
     def get_actual_instruction(self):
         return self.actual_instruction
 
+    def get_full_id(self):
+        return self.process_type + str(self.identifier)
+
     def __str__(self):
-        res = str(self.identifier) + '  ' + self.process_type
+        res = self.get_full_id() + ':  '
         for instruction in self.instruction_list:
             res += instruction.__str__() + '\n'
         return res

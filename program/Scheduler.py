@@ -6,24 +6,20 @@ from program.Process import Process
 
 
 class Scheduler:
-
-    NB_INSTRUCTION_TO_EXEC = 7
+    NB_INSTRUCTION_TO_EXEC = 1
 
     def __init__(self, partial_process):
         self.partial_process = partial_process
         self.semaphores = self.build_semaphores()
         self.nb_read, self.nb_write, self.nb_execute, self.nb_simulation = self.build_params()
         print(self.nb_read, self.nb_write, self.nb_execute, self.nb_simulation)
-        self.waiting_process = defaultdict(set)
+        self.waiting_process = defaultdict(list)
         self.processes = self.build_processes()
         self.nb_finished_process = 0
-
-        print('debug')
-        for process in self.processes:
-            print()
-            print(process)
-            print()
-        print('end')
+        # stock result in a triplet format (L, E, X)
+        self.process_in_critical_solution = set()
+        # debug purpose
+        self.index_scenario = -1
 
     def build_semaphores(self):
         init_clauses = self.partial_process.get_partial_prog()['%IN']
@@ -74,29 +70,78 @@ class Scheduler:
         return processes
 
     def run_simulation(self):
+        self.init_waiting_process()
+        partial_concurrent_proc = set()
         while not self.is_end_simualtion():
-            #check si le premie de la liste est bloque s'il est tu en choisi un au hasard
-            #sinon c'est lui qu'on execute
-            #vider simulation
-            process = random.choice(self.processes)
-            # Search for a un_blocked process
-            while process.is_blocked():
+            sem_id, process = self.get_unblocked_process_from_waiting_list()
+            if process is None:
                 process = random.choice(self.processes)
+                #process = self.get_next_scenario()
+                # Search for a unblocked process
+                while process.is_blocked():
+                    process = random.choice(self.processes)
+                    # process = self.get_next_scenario()
+            else:
+                # erase it from waiting_list
+                self.waiting_process[sem_id].remove(process)
+
             # if we are here that means we found one
             nb_instruction_to_exec = random.randint(1, Scheduler.NB_INSTRUCTION_TO_EXEC)
 
             # if the process is blocked it will stay in the same instruction
             for i in range(nb_instruction_to_exec):
-                done, blocked, blocking_semaphore = process.execute()
-                if blocking_semaphore is not None:
-                    self.waiting_process[blocking_semaphore.get_id()].add(process)
+                process.execute()
+                if not process.is_finished_process() and process.is_in_critical_section():
+                    partial_concurrent_proc.add(process.get_full_id())
+                    self.add_result(partial_concurrent_proc)
 
             # check if the process is done to kill it
             if process.is_finished_process():
+                partial_concurrent_proc.remove(process.get_full_id())
+                self.add_result(partial_concurrent_proc)
                 self.processes.remove(process)
+                self.nb_finished_process += 1
+
+        print('done')
+        for elem in self.process_in_critical_solution:
+            print(elem)
 
     def is_end_simualtion(self):
         return self.nb_finished_process == self.nb_read + self.nb_execute + self.nb_write
 
     def get_semaphores(self):
         return self.semaphores
+
+    def get_waiting_processes(self):
+        return self.waiting_process
+
+    def get_result(self):
+        return self.process_in_critical_solution
+
+    def init_waiting_process(self):
+        for sem_id, process_list in self.waiting_process.items():
+            process_list.clear()
+        self.nb_finished_process = 0
+
+    def get_unblocked_process_from_waiting_list(self):
+        for sem_id, process_list in self.waiting_process.items():
+            if process_list and not process_list[0].is_blocked():
+                return sem_id, process_list[0]
+        return None, None
+
+    def add_result(self, partial_concurrent_proc):
+        # (L, E , X)
+        res = [0, 0, 0]
+        for pcp in partial_concurrent_proc:
+            if pcp[0] == 'L':
+                res[0] += 1
+            elif pcp[0] == 'E':
+                res[1] += 1
+            elif pcp[0] == 'X':
+                res[2] += 1
+        self.process_in_critical_solution.add((res[0], res[1], res[2]))
+
+    def get_next_scenario(self):
+        scenario = [0, 0, 0]
+        self.index_scenario = (1 + self.index_scenario) % (len(scenario))
+        return self.processes[scenario[self.index_scenario]]

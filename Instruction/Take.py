@@ -10,7 +10,8 @@ class Take(Instruction):
             self.waiting_processes[self.semaphore.get_id()].append(self.process)
             self.process.block_process()
             blocked = True
-        self.semaphore.decrement()
+        else:
+            self.semaphore.decrement()
         return blocked
 
     def __str__(self):

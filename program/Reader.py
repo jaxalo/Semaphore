@@ -4,6 +4,7 @@
 import os
 from program.PartialProcess import PartialProcess
 from program.Analyser import Analyser
+from program.Scheduler import Scheduler
 
 
 class Reader:
@@ -56,6 +57,10 @@ class Reader:
                 analyser.analyse_semantic(process)
                 #build process
                 print('done_processing ', file_name, Reader.SEPARATOR)
+                if analyser.is_correct():
+                    scheduler = Scheduler(process)
+                    scheduler.run_simulation()
+                    conflicting_process = scheduler.gz
                 return analyser.is_correct(), res, file_name
         except Exception as e:
             print('done_processing ', file_name, Reader.SEPARATOR)
