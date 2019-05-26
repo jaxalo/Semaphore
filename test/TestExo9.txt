@@ -1,19 +1,20 @@
-#Test Correct
 %IN
-L=2
-E=1
+L=4
+M=1
 %PA
-L=2
-E=2
+L=10
+E=10
 N=500
 %PL
 P(L)
 %EL
 V(L)
 %PE
-P(E)
+P(M)
 P(L)
+P(L)
+V(M)
 %EE
 V(L)
-V(E)
+V(L)
 %FI
