@@ -1,6 +1,6 @@
-from program.Waiter import Waiter
-from program.Take import Take
-from program.Release import Release
+from Instruction.Waiter import Waiter
+from Instruction.Take import Take
+from Instruction.Release import Release
 
 
 class Process:
@@ -37,9 +37,9 @@ class Process:
         for prolog_clause in prolog:
             instruction = None
             if prolog_clause[0] == 'P':
-                instruction = Take(self.semaphores[prolog_clause[2]])
+                instruction = Take(self.semaphores[prolog_clause[2]], waiting_process, self)
             elif prolog_clause[0] == 'V':
-                instruction = Release(waiting_process, self.semaphores[prolog_clause[2]])
+                instruction = Release(waiting_process, self.semaphores[prolog_clause[2]], waiting_process, self)
             instruction_list.append(instruction)
 
         # building critical_section
@@ -70,6 +70,12 @@ class Process:
 
     def is_blocked(self):
         return self.blocked
+
+    def block_process(self):
+        self.blocked = False
+
+    def unblock_process(self):
+        self.blocked = True
 
     def is_in_critical_section(self):
         return type(self.instruction_list[self.actual_instruction]) is Waiter

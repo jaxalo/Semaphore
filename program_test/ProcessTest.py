@@ -104,4 +104,4 @@ def test_executing_process():
     print()
 
 
-test_executing_process()
+test_init_process()

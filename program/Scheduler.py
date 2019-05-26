@@ -75,6 +75,9 @@ class Scheduler:
 
     def run_simulation(self):
         while not self.is_end_simualtion():
+            #check si le premie de la liste est bloque s'il est tu en choisi un au hasard
+            #sinon c'est lui qu'on execute
+            #vider simulation
             process = random.choice(self.processes)
             # Search for a un_blocked process
             while process.is_blocked():

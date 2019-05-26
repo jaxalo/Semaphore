@@ -1,4 +1,4 @@
-from program.Instruction import Instruction
+from Instruction.Instruction import Instruction
 
 
 class Waiter(Instruction):
@@ -9,12 +9,12 @@ class Waiter(Instruction):
         self.executed_so_far = 0
 
     def execute(self):
-        # return done and blocked and blocking semaphore
-        if self.executed_so_far == self.nb_instruction - 1:
-            return True, False, None
+        # return blocked
+        if self.executed_so_far == self.nb_instruction:
+            return False
         else:
             self.executed_so_far += 1
-            return False, False, None
+            return True
 
     def get_executed_so_far(self):
         return self.executed_so_far
