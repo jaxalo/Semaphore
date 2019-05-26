@@ -72,11 +72,11 @@ class Scheduler:
     def run_simulation(self):
         self.init_waiting_process()
         partial_concurrent_proc = set()
-        while not self.is_end_simualtion():
+        while not self.is_end_simualtion() and not self.is_deadlock():
             sem_id, process = self.get_unblocked_process_from_waiting_list()
             if process is None:
                 process = random.choice(self.processes)
-                #process = self.get_next_scenario()
+                # process = self.get_next_scenario()
                 # Search for a unblocked process
                 while process.is_blocked():
                     process = random.choice(self.processes)
@@ -102,9 +102,14 @@ class Scheduler:
                 self.processes.remove(process)
                 self.nb_finished_process += 1
 
-        print('done')
-        for elem in self.process_in_critical_solution:
-            print(elem)
+        # print('done')
+        # for elem in self.process_in_critical_solution:
+        #   print(elem)
+
+    def run_simulations(self):
+        for _ in range(self.nb_simulation):
+            self.processes = self.build_processes()
+            self.run_simulation()
 
     def is_end_simualtion(self):
         return self.nb_finished_process == self.nb_read + self.nb_execute + self.nb_write
@@ -115,8 +120,13 @@ class Scheduler:
     def get_waiting_processes(self):
         return self.waiting_process
 
-    def get_result(self):
-        return self.process_in_critical_solution
+    def get_str_result(self):
+        res = 'L ,E , X\n'
+        res += '---------\n'
+        sorted_res = sorted(list(self.process_in_critical_solution))
+        for triplet in sorted_res:
+            res += str(triplet) + '\n'
+        return res
 
     def init_waiting_process(self):
         for sem_id, process_list in self.waiting_process.items():
@@ -140,6 +150,12 @@ class Scheduler:
             elif pcp[0] == 'X':
                 res[2] += 1
         self.process_in_critical_solution.add((res[0], res[1], res[2]))
+
+    def is_deadlock(self):
+        for process in self.processes:
+            if not process.is_blocked():
+                return False
+        return True
 
     def get_next_scenario(self):
         scenario = [0, 0, 0]

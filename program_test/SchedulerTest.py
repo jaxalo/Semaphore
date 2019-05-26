@@ -9,4 +9,4 @@ with open(file_path) as fp:
     partial_process.build(fp)
 
 scheduler = Scheduler(partial_process)
-scheduler.run_simulation()
+scheduler.run_simulations()
