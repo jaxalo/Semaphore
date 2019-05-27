@@ -6,7 +6,7 @@ from program.Process import Process
 
 
 class Scheduler:
-    NB_INSTRUCTION_TO_EXEC = 1
+    NB_INSTRUCTION_TO_EXEC = 7
 
     def __init__(self, partial_process):
         self.partial_process = partial_process
@@ -75,32 +75,33 @@ class Scheduler:
         while not self.is_end_simualtion() and not self.is_deadlock():
             sem_id, process = self.get_unblocked_process_from_waiting_list()
             if process is None:
-                process = random.choice(self.processes)
+                process = random.choice(self.get_unblocked_process())
                 # process = self.get_next_scenario()
-                # Search for a unblocked process
-                while process.is_blocked():
-                    process = random.choice(self.processes)
-                    # process = self.get_next_scenario()
             else:
                 # erase it from waiting_list
                 self.waiting_process[sem_id].remove(process)
 
             # if we are here that means we found one
+            # print('debut boucle')
+            # process.debug()
             nb_instruction_to_exec = random.randint(1, Scheduler.NB_INSTRUCTION_TO_EXEC)
-
             # if the process is blocked it will stay in the same instruction
             for i in range(nb_instruction_to_exec):
-                process.execute()
+                if not process.is_blocked():
+                    process.execute()
                 if not process.is_finished_process() and process.is_in_critical_section():
                     partial_concurrent_proc.add(process.get_full_id())
                     self.add_result(partial_concurrent_proc)
+                if process.quit_critical_section():
+                    partial_concurrent_proc.remove(process.get_full_id())
+                    self.add_result(partial_concurrent_proc)
 
-            # check if the process is done to kill it
             if process.is_finished_process():
-                partial_concurrent_proc.remove(process.get_full_id())
-                self.add_result(partial_concurrent_proc)
                 self.processes.remove(process)
                 self.nb_finished_process += 1
+
+            # print('fin boucle')
+            # process.debug()
 
         # print('done')
         # for elem in self.process_in_critical_solution:
@@ -108,6 +109,7 @@ class Scheduler:
 
     def run_simulations(self):
         for _ in range(self.nb_simulation):
+            self.semaphores = self.build_semaphores()
             self.processes = self.build_processes()
             self.run_simulation()
 
@@ -123,7 +125,8 @@ class Scheduler:
     def get_str_result(self):
         res = 'L ,E , X\n'
         res += '---------\n'
-        sorted_res = sorted(list(self.process_in_critical_solution))
+        sorted_res = self.process_in_critical_solution
+        # sorted_res = sorted(list(self.process_in_critical_solution))
         for triplet in sorted_res:
             res += str(triplet) + '\n'
         return res
@@ -161,3 +164,10 @@ class Scheduler:
         scenario = [0, 0, 0]
         self.index_scenario = (1 + self.index_scenario) % (len(scenario))
         return self.processes[scenario[self.index_scenario]]
+
+    def get_unblocked_process(self):
+        processes = []
+        for process in self.processes:
+            if not process.is_blocked():
+                processes.append(process)
+        return processes
