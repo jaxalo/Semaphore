@@ -1,4 +1,0 @@
-Fail
-
-
-undeclared semaphore E
