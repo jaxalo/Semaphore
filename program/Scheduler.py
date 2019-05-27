@@ -123,11 +123,11 @@ class Scheduler:
         return self.waiting_process
 
     def get_str_result(self):
-        res = 'L ,E , X\n'
+        res = 'L, E, X\n'
         res += '---------\n'
-        sorted_res = self.process_in_critical_solution
-        # sorted_res = sorted(list(self.process_in_critical_solution))
-        for triplet in sorted_res:
+        sorted_res = sorted(list(self.process_in_critical_solution))
+        # starting from 1 to erase the tuple (0,0,0)
+        for triplet in sorted_res[1::]:
             res += str(triplet) + '\n'
         return res
 

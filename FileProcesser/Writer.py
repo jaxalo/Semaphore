@@ -6,7 +6,8 @@ import os
 
 
 class Writer:
-    folder_name = '../report'
+    SEPARATOR = '\n------------------------------\n'
+    folder_name = 'report'
 
     def __init__(self):
         pth = Path(self.folder_name)
@@ -27,12 +28,18 @@ class Writer:
 
         file_create = 'Report_' + file_name
         with open(os.path.join(path, file_create), 'w+') as temp_file:
+            print(Writer.SEPARATOR)
+            print(file_create)
             temp_file.write('Success\n' if success else 'Fail\n')
+            print('Success\n' if success else 'Fail\n')
             temp_file.write('\n')
             if success:
                 temp_file.write(program_file)
+                print(program_file)
             else:
                 temp_file.write(str(program_file))
+                print(program_file)
+            print(Writer.SEPARATOR)
 
     def delete_folder(self, pth):
         for sub in pth.iterdir():

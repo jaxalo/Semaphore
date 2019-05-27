@@ -21,7 +21,8 @@ class PartialProcess:
                 i = i + 1
                 while i < nb_lines:
                     if not lines[i].startswith('#') and lines[i].strip():
-                        temp.append(lines[i].rstrip('\n'))
+                        str_without_space = lines[i].strip().replace(' ', '')
+                        temp.append(str_without_space)
                     i = i + 1
                     if lines[i].startswith('%'):
                         break
