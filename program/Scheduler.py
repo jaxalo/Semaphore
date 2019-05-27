@@ -82,8 +82,8 @@ class Scheduler:
                 self.waiting_process[sem_id].remove(process)
 
             # if we are here that means we found one
-            #print('debut boucle')
-            #process.debug()
+            # print('debut boucle')
+            # process.debug()
             nb_instruction_to_exec = random.randint(1, Scheduler.NB_INSTRUCTION_TO_EXEC)
             # if the process is blocked it will stay in the same instruction
             for i in range(nb_instruction_to_exec):
@@ -92,17 +92,16 @@ class Scheduler:
                 if not process.is_finished_process() and process.is_in_critical_section():
                     partial_concurrent_proc.add(process.get_full_id())
                     self.add_result(partial_concurrent_proc)
-
-            if process.quit_critical_section():
-                partial_concurrent_proc.remove(process.get_full_id())
-                self.add_result(partial_concurrent_proc)
+                if process.quit_critical_section():
+                    partial_concurrent_proc.remove(process.get_full_id())
+                    self.add_result(partial_concurrent_proc)
 
             if process.is_finished_process():
                 self.processes.remove(process)
                 self.nb_finished_process += 1
 
-            #print('fin boucle')
-            #process.debug()
+            # print('fin boucle')
+            # process.debug()
 
         # print('done')
         # for elem in self.process_in_critical_solution:
@@ -110,6 +109,7 @@ class Scheduler:
 
     def run_simulations(self):
         for _ in range(self.nb_simulation):
+            self.semaphores = self.build_semaphores()
             self.processes = self.build_processes()
             self.run_simulation()
 
@@ -126,7 +126,7 @@ class Scheduler:
         res = 'L ,E , X\n'
         res += '---------\n'
         sorted_res = self.process_in_critical_solution
-        #sorted_res = sorted(list(self.process_in_critical_solution))
+        # sorted_res = sorted(list(self.process_in_critical_solution))
         for triplet in sorted_res:
             res += str(triplet) + '\n'
         return res

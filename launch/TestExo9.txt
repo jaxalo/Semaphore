@@ -1,10 +1,9 @@
-#Test Correct
 %IN
-L=2
-E=1
+L=4
+E=2
 %PA
-L=20
-E=20
+L=10
+E=10
 N=500
 %PL
 P(L)
@@ -13,7 +12,9 @@ V(L)
 %PE
 P(E)
 P(L)
+P(L)
 %EE
+V(L)
 V(L)
 V(E)
 %FI
