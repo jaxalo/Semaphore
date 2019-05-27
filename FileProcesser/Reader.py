@@ -15,19 +15,19 @@ class Reader:
         print('opening : ', folder_name)
         program_files = []
         try:
-            files_name = sorted(os.listdir('../' + folder_name))
+            files_name = sorted(os.listdir(folder_name))
             print('File to be processed :', ' ; '.join(files_name))
             for file_name in files_name:
                 if file_name.endswith('.txt'):
-                    program_files.append(Reader.process_file1(folder_name, file_name))
+                    program_files.append(Reader.process_file(file_name, folder_name))
         except FileNotFoundError:
             print('Error : folder {} not found'.format(folder_name))
         return program_files
 
     @staticmethod
-    def process_file(folder_name, file_name):
+    def pre_process_file(file_name, folder_name='launch'):
         try:
-            file_path = '../' + folder_name + '/' + file_name
+            file_path = folder_name + '/' + file_name
             process = PartialProcess()
             analyser = Analyser()
             with open(file_path) as fp:
@@ -46,9 +46,9 @@ class Reader:
             return False, e, file_name
 
     @staticmethod
-    def process_file1(folder_name, file_name):
+    def process_file(file_name, folder_name='launch'):
         try:
-            file_path = '../' + folder_name + '/' + file_name
+            file_path = folder_name + '/' + file_name
             process = PartialProcess()
             analyser = Analyser()
             with open(file_path) as fp:
@@ -66,6 +66,32 @@ class Reader:
                 else:
                     res = analyser.get_errors()
                 return analyser.is_correct(), res, file_name
+
+        except Exception as e:
+            print('done_processing ', file_name, Reader.SEPARATOR)
+            return False, e, file_name
+
+    @staticmethod
+    def process_file_only_one(file_name, folder_name='launch'):
+        try:
+            file_path = folder_name + '/' + file_name
+            process = PartialProcess()
+            analyser = Analyser()
+            with open(file_path) as fp:
+                print(Reader.SEPARATOR, file_name)
+                process.build(fp)
+                analyser.analyse_syntax(process)
+                analyser.analyse_semantic(process)
+                # build process
+                print('done_processing ', file_name, Reader.SEPARATOR)
+                if analyser.is_correct():
+                    scheduler = Scheduler(process)
+                    scheduler.run_simulations()
+                    print('all simulation done')
+                    res = scheduler.get_str_result()
+                else:
+                    res = analyser.get_errors()
+                return [(analyser.is_correct(), res, file_name)]
 
         except Exception as e:
             print('done_processing ', file_name, Reader.SEPARATOR)

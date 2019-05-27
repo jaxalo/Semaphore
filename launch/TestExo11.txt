@@ -1,0 +1,27 @@
+# Voici le corrige de l'exercice 11
+%IN
+L=6
+M=1
+%PA
+L=10
+E=10
+N=500
+%PL
+P(M)
+P(L)
+P(L)
+V(M)
+%EL
+V(L)
+V(L)
+%PE
+P(M)
+P(L)
+P(L)
+P(L)
+V(M)
+%EE
+V(L)
+V(L)
+V(L)
+%FI

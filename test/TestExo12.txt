@@ -1,0 +1,35 @@
+# Voici le corrige de l'exercice 12
+%IN
+ L=2
+ O=2
+ M=1
+%PA
+ L=10
+ E=10
+ X=10
+ N=500
+%PL
+ P(M)
+ P(O)
+ P(L)
+ V(M)
+%EL
+ V(O)
+ V(L)
+%PE
+ P(M)
+ P(O)
+ P(L)
+ P(L)
+ V(M)
+%EE
+ V(L)
+ V(L)
+ V(O)
+%PX
+ P(M)
+ P(O)
+ V(M)
+%EX
+ V(O)
+%FI
