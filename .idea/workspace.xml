@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cbf543-08f7-407d-b317-0384fbe8561a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/launch/TestExo8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/launch/TestExo8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/Scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/Scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report_TestExo8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_TestExo8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/TestExo10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestExo10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/TestExo8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/TestExo9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/launch/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program/PartialProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/PartialProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Report_TestExo9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report_TestExo9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestExo8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestExo8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestExo9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestExo9.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,40 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program/Scheduler.py">
+        <entry file="file://$PROJECT_DIR$/report/Report_TestExo10.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="111" column="53" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/launch/TestExo9.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/TestExo8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/launch/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="144">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="e#39#78#0" expanded="true" />
               </folding>
@@ -57,22 +42,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FileProcesser/Reader.py">
+        <entry file="file://$PROJECT_DIR$/FileProcesser/Analyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="64" column="39" lean-forward="true" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-              <folding>
-                <element signature="e#39#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program/Process.py">
+        <entry file="file://$PROJECT_DIR$/program/PartialProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="126">
+              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -105,7 +87,6 @@
         <option value="$PROJECT_DIR$/report/Report_Test2.txt" />
         <option value="$PROJECT_DIR$/test/Test4.txt" />
         <option value="$PROJECT_DIR$/test/Test16.txt" />
-        <option value="$PROJECT_DIR$/program/PartialProcess.py" />
         <option value="$PROJECT_DIR$/report/Report_Test13.txt" />
         <option value="$PROJECT_DIR$/test/Test13.txt" />
         <option value="$PROJECT_DIR$/test/Test14.txt" />
@@ -125,10 +106,8 @@
         <option value="$PROJECT_DIR$/program/Writer.py" />
         <option value="$PROJECT_DIR$/program_test/SchedulerTest.py" />
         <option value="$PROJECT_DIR$/test/TestExo9.txt" />
-        <option value="$PROJECT_DIR$/report/Report_TestExo9.txt" />
         <option value="$PROJECT_DIR$/report/Report_Test1.txt" />
         <option value="$PROJECT_DIR$/FileProcesser/Reader.py" />
-        <option value="$PROJECT_DIR$/launch/main.py" />
         <option value="$PROJECT_DIR$/Instruction/Take.py" />
         <option value="$PROJECT_DIR$/program/Process.py" />
         <option value="$PROJECT_DIR$/Instruction/Release.py" />
@@ -139,6 +118,11 @@
         <option value="$PROJECT_DIR$/launch/TestExo8.txt" />
         <option value="$PROJECT_DIR$/report/Report_TestExo8.txt" />
         <option value="$PROJECT_DIR$/launch/TestExo9.txt" />
+        <option value="$PROJECT_DIR$/report/Report_TestExo9.txt" />
+        <option value="$PROJECT_DIR$/launch/TestExo10.txt" />
+        <option value="$PROJECT_DIR$/program/PartialProcess.py" />
+        <option value="$PROJECT_DIR$/report/Report_TestExo10.txt" />
+        <option value="$PROJECT_DIR$/launch/main.py" />
       </list>
     </option>
   </component>
@@ -210,6 +194,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/launch" />
       <recent name="$PROJECT_DIR$/FileProcesser" />
       <recent name="$PROJECT_DIR$/Instruction" />
@@ -468,12 +453,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Test7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test8.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test9.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -513,13 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="220" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program/PartialProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -599,21 +571,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileProcesser/Analyser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/Report_main.py" />
-    <entry file="file://$PROJECT_DIR$/report/Report_TestExo9.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestExo8.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -716,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileProcesser/Reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -743,7 +691,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/TestExo8.txt">
+    <entry file="file://$PROJECT_DIR$/test/TestExo8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
@@ -767,10 +715,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/TestExo9.txt">
+    <entry file="file://$PROJECT_DIR$/test/TestExo9.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/Report_TestExo9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestExo10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileProcesser/Analyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program/PartialProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/Report_TestExo10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#39#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

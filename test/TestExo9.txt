@@ -1,6 +1,6 @@
 %IN
 L=4
-M=1
+E=2
 %PA
 L=10
 E=10
@@ -10,11 +10,11 @@ P(L)
 %EL
 V(L)
 %PE
-P(M)
+P(E)
 P(L)
 P(L)
-V(M)
 %EE
 V(L)
 V(L)
+V(E)
 %FI
