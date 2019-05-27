@@ -5,7 +5,7 @@ class PartialProcess:
 
     def __init__(self):
         self.partial_prog = dict()
-        self.keywords = ['%IN', '%PA', '%FI', '%PL', '%EL', '%PE', '%EE', 'EX', 'PX']
+        self.keywords = ['%IN', '%PA', '%FI', '%PL', '%EL', '%PE', '%EE', '%EX', '%PX']
 
     def build(self, file):
         lines = file.readlines()

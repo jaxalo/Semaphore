@@ -1,5 +1,6 @@
-from Instruction.Instruction import Instruction
+import random
 
+from Instruction.Instruction import Instruction
 
 
 # V(Semaphore)
@@ -7,13 +8,10 @@ from Instruction.Instruction import Instruction
 class Release(Instruction):
 
     def execute(self):
-        # return blocked
         self.semaphore.increment()
-        if self.waiting_processes[self.semaphore.get_id()]:
-            next_process = self.waiting_processes[self.semaphore.get_id()][0]
+        if self.semaphore.get_value() <= 0:
+            next_process = random.choice(self.waiting_processes[self.semaphore.get_id()])
             next_process.unblock_process()
-            self.reschedule = True
-        return False
 
     def __str__(self):
         return ' Release ' + self.semaphore.__str__()

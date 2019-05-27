@@ -58,15 +58,20 @@ class Process:
         return instruction_list
 
     def execute(self):
-        blocked = self.instruction_list[self.actual_instruction].execute()
-        self.blocked = blocked
+        if not self.is_finished_process() and not self.blocked:
+            to_execute = self.instruction_list[self.actual_instruction]
+            to_execute.execute()
+            if type(to_execute) is Waiter and to_execute.is_done():
+                self.actual_instruction += 1
+            elif type(to_execute) is Release:
+                self.actual_instruction += 1
+            elif type(to_execute) is Take and not self.blocked:
+                self.actual_instruction += 1
 
-        if blocked and type(self.instruction_list[self.actual_instruction]) is Waiter:
-            self.actual_instruction += 0
-            self.blocked = False
-        elif not blocked:
-            self.actual_instruction += 1
-
+    def quit_critical_section(self):
+        return not self.is_finished_process() and type(
+            self.instruction_list[self.actual_instruction - 1]) is Waiter and not (
+                type(self.instruction_list[self.actual_instruction]) is Waiter)
 
     def is_blocked(self):
         return self.blocked
@@ -78,7 +83,7 @@ class Process:
         self.blocked = False
 
     def is_in_critical_section(self):
-        return type(self.instruction_list[self.actual_instruction]) is Waiter
+        return not self.is_finished_process() and type(self.instruction_list[self.actual_instruction]) is Waiter
 
     def is_finished_process(self):
         return self.actual_instruction == len(self.instruction_list)
@@ -88,6 +93,14 @@ class Process:
 
     def get_full_id(self):
         return self.process_type + str(self.identifier)
+
+    def debug(self):
+        print(self.get_full_id())
+        print('instruction : ', self.actual_instruction)
+        print('is blocked : ', self.blocked)
+        print('is critical section : ', self.is_in_critical_section())
+        print('is finished : ', self.is_finished_process())
+        print('---------------------------------------')
 
     def __str__(self):
         res = self.get_full_id() + ':  '

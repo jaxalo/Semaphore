@@ -18,7 +18,8 @@ class Reader:
             files_name = sorted(os.listdir('../' + folder_name))
             print('File to be processed :', ' ; '.join(files_name))
             for file_name in files_name:
-                program_files.append(Reader.process_file1(folder_name, file_name))
+                if file_name.endswith('.txt'):
+                    program_files.append(Reader.process_file1(folder_name, file_name))
         except FileNotFoundError:
             print('Error : folder {} not found'.format(folder_name))
         return program_files
