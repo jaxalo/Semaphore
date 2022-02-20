@@ -1,3 +1,3 @@
 # Semaphore
 
-Implementation of "home made" semaphore for a lab 
+Implementation of a "home made" semaphore for a lab 
